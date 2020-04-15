@@ -118,6 +118,7 @@ app.post("/google", async (req, res) => {
 app.post('/', (req, res) => {
 
     var body = req.body;
+    console.log(body);
 
     Usuario.findOne({ email: body.email }, (err, usuarioDB) => {
 
